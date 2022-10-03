@@ -1,6 +1,44 @@
 @import "./base.css";
+@import "/node_modules/bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-#app {
+/* RESET CSS */
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #4D4D4D;
+}
+
+/* HOME */
+
+.caixa-linguagem {
+  margin-top: 25px;
+}
+
+.texto-linguagem{
+  font-size: 18px;
+}
+
+.caixa-menu {
+  margin-top: 80px;
+}
+
+.lista-menu li {
+  float: left;
+  margin-left: 36px;
+}
+
+.lista-menu-font {
+  font-family: Roboto;
+  font-size: 18px;
+  text-align: center;
+  line-height: 21px;
+}
+
+/* #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -32,4 +70,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */
