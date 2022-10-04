@@ -1,7 +1,7 @@
 @import "./base.css";
 @import "/node_modules/bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 /* RESET CSS */
 ul {
   list-style: none;
@@ -12,31 +12,44 @@ li a {
   color: #4D4D4D;
 }
 
-/* HOME */
+/* CABECARIO */
+
+.caixa-esquerda{
+  padding: 3% 0 0 3%
+
+}
 
 .caixa-linguagem {
   margin-top: 25px;
 }
 
-.texto-linguagem{
+.texto-linguagem {
   font-size: 18px;
 }
 
-.caixa-menu {
-  margin-top: 80px;
-}
-
-.lista-menu li {
-  float: left;
-  margin-left: 36px;
+.lista-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 
 .lista-menu-font {
   font-family: Roboto;
   font-size: 18px;
-  text-align: center;
-  line-height: 21px;
 }
+
+.vetor-rosa {
+  position: absolute;
+  left: 3%;
+}
+
+.borda-container {
+  border: 1px solid black;
+}
+
+/* HOME */
+
+
 
 /* #app {
   max-width: 1280px;
