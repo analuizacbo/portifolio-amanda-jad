@@ -2,7 +2,13 @@
 @import "/node_modules/bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 /* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style: none;
 }
@@ -12,11 +18,16 @@ li a {
   color: #4D4D4D;
 }
 
+/* PADROES */
+* {
+  font-family: Roboto;
+}
+
+
 /* CABECARIO */
 
-.caixa-esquerda{
+.caixa-esquerda {
   padding: 3% 0 0 3%
-
 }
 
 .caixa-linguagem {
@@ -34,7 +45,6 @@ li a {
 }
 
 .lista-menu-font {
-  font-family: Roboto;
   font-size: 18px;
 }
 
@@ -49,6 +59,43 @@ li a {
 
 /* HOME */
 
+.txt-caveat-38 {
+  font-family: Caveat;
+  font-size: 38px;
+  color: #710234;
+}
+
+.bolinha {
+  border-radius: 60px;
+  width: 56px;
+  height: 56px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 25%);
+}
+
+.caixa-desc {
+  margin-top: 36px;
+}
+
+.card-projetos {
+  margin-top: 36px;
+  height: 329px;
+  width: 349px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+/* FOOTER */
+.caixa-footer {
+  background-color: #710234;
+}
+
+.txt-footer {
+  font-family: Roboto;
+  font-weight: 500;
+  color: #fff;
+  padding: 8px 0px;
+}
 
 
 /* #app {
