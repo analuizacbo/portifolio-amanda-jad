@@ -42,6 +42,10 @@ li a {
   width: 100%;
 }
 
+.caixa-profissao {
+  margin: 0px 0 16px 0
+}
+
 .caixa-menu {
   margin-top: 32px;
 }
