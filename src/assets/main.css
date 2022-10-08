@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 /* RESET CSS */
-* {
+*,
+p {
   margin: 0;
   padding: 0;
 }
@@ -26,36 +27,29 @@ li a {
 
 /* CABECARIO */
 
-.caixa-esquerda {
-  padding: 3% 0 0 3%
-}
-
-.caixa-linguagem {
-  margin-top: 25px;
-}
-
-.texto-linguagem {
-  font-size: 18px;
-}
-
-.lista-menu {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
-}
-
-.lista-menu-font {
-  font-size: 18px;
-}
-
-.vetor-rosa {
-  position: absolute;
-  left: 3%;
-}
-
 .borda-container {
   border: 1px solid black;
 }
+
+.caixa-svg-rosa {
+  width: 660px;
+  height: 616px;
+  position: absolute;
+  left: -18%;
+}
+
+.svg-rosa {
+  width: 100%;
+}
+
+.caixa-menu {
+  margin-top: 32px;
+}
+
+.menu li {
+  margin-left: 36px;
+}
+
 
 /* HOME */
 
@@ -77,9 +71,9 @@ li a {
 }
 
 .card-projetos {
-  margin-top: 36px;
   height: 329px;
   width: 349px;
+  margin: 36px 0;
   border-radius: 50px;
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
 }
@@ -94,40 +88,31 @@ li a {
   font-family: Roboto;
   font-weight: 500;
   color: #fff;
-  padding: 8px 0px;
+  padding: 8px 0;
 }
 
 
-/* #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+/* RESPONSIVIDADE */
+@media (max-width: 389.98px) {
+  .caixa-svg-rosa {
+    width: 271.35px;
+    height: 252.98px;
+    top: -2%;
+    left: -40%;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-} */
+}
+
+@media (min-width: 390px) and (max-width: 575.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1400px) and (max-width: 1599.98px) {}
+
+@media (min-width: 1600px) and (max-width: 1799.98px) {}
