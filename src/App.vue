@@ -1,6 +1,6 @@
 <script setup>
-import Cabecario from './components/Cabecario.vue';
-
+import Cabecario from "./components/Cabecario.vue";
+import Footer from "./components/Footer.vue";
 </script>
 <template>
   <section class="caixa-principal">
@@ -9,6 +9,6 @@ import Cabecario from './components/Cabecario.vue';
       <Cabecario />
       <router-view />
     </div>
+    <Footer />
   </section>
-
 </template>
