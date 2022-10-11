@@ -14,7 +14,8 @@ ul {
   list-style: none;
 }
 
-li a {
+li a,
+a {
   text-decoration: none;
   color: #4D4D4D;
 }
@@ -57,6 +58,7 @@ li a {
 
 /* HOME */
 
+.profissao,
 .txt-caveat-38 {
   font-family: Caveat;
   font-size: 38px;
@@ -76,12 +78,11 @@ li a {
 
 .card-projetos {
   height: 329px;
-  width: 349px;
-  margin: 36px 0;
+  width: 329px;
+  margin: 21.5px 0;
   border-radius: 50px;
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
 }
-
 
 /* FOOTER */
 .caixa-footer {
@@ -98,6 +99,8 @@ li a {
 
 /* RESPONSIVIDADE */
 @media (max-width: 389.98px) {
+
+  /* CABECARIO */
   .caixa-svg-rosa {
     width: 271.35px;
     height: 252.98px;
@@ -105,6 +108,41 @@ li a {
     left: -40%;
   }
 
+  .caixa-profissao {
+    margin-top: 12%;
+  }
+
+  .profissao {
+    font-size: 22px;
+  }
+
+  .txt-caveat-22 {
+    font-size: 22px;
+  }
+
+  .txt-skills {
+    font-size: 16px;
+  }
+
+  .card-projetos {
+    width: 154px;
+    height: 145px;
+    border-radius: 24px;
+    padding-bottom: 32px;
+  }
+
+  .txt-desc-projeto {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+
+  .desktop img {
+    height: 71px;
+  }
+
+  .mobile img {
+    height: 82px;
+  }
 }
 
 @media (min-width: 390px) and (max-width: 575.98px) {}

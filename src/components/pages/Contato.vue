@@ -1,3 +1,7 @@
 <template>
-  <div>Contato</div>
+  <Cabecario imgLogo="Contato" />
 </template>
+
+<script setup>
+import Cabecario from "../Cabecario.vue";
+</script>

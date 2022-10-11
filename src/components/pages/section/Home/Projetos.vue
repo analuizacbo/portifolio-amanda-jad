@@ -1,44 +1,44 @@
 <template>
-  <div class="row justify-content-center">
-    <div class="col-md-6 d-flex justify-content-center">
-      <div class="card-projetos">
-        <p class="txt-caveat-38 text-center">
-          {{ primeiroDispositivo.descricao }}
-        </p>
-        <a
-          class="d-flex justify-content-center"
-          :href="primeiroDispositivo.link"
+  <div class="row">
+    <div
+      v-for="dispositivo in dispositivos"
+      class="col-6 d-flex justify-content-center"
+      :key="dispositivo.descricao"
+    >
+      <a :href="dispositivo.link">
+        <div
+          class="
+            card-projetos
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center
+          "
+          :class="dispositivo.classe"
         >
-          <img :src="primeiroDispositivo.imgIcone" />
-        </a>
-      </div>
-    </div>
-    <div class="col-md-6 d-flex justify-content-center">
-      <div class="card-projetos">
-        <p class="txt-caveat-38 text-center">
-          {{ segundoDispositivo.descricao }}
-        </p>
-        <a
-          class="d-flex justify-content-center"
-          :href="segundoDispositivo.link"
-        >
-          <img :src="segundoDispositivo.imgIcone" />
-        </a>
-      </div>
+          <p class="txt-caveat-38 text-center txt-desc-projeto">
+            {{ dispositivo.descricao }}
+          </p>
+          <img class="img-fluid" :src="dispositivo.imgIcone" />
+        </div>
+      </a>
     </div>
   </div>
 </template>
 
 <script setup>
-const primeiroDispositivo = {
-  descricao: "Desktop",
-  link: "",
-  imgIcone: "/src/img/desktop.svg",
-};
-
-const segundoDispositivo = {
-  descricao: "Mobile",
-  link: "",
-  imgIcone: "/src/img/mobile.svg",
-};
+const dispositivos = [
+  {
+    descricao: "Desktop",
+    link: "",
+    imgIcone: "/src/img/desktop.svg",
+    classe: "desktop",
+  },
+  {
+    descricao: "Mobile",
+    link: "",
+    imgIcone: "/src/img/mobile.svg",
+    classe: "mobile",
+  },
+];
 </script>
