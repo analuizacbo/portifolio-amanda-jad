@@ -2,10 +2,10 @@
   <div class="caixa-svg-rosa">
     <img class="img-fluid svg-rosa" src="/src/img/vetor-fundo-perfil.svg" />
   </div>
+  <p class="text-end linguagem">BR&nbsp;&nbsp;&nbsp;&nbsp;EN</p>
   <div class="row">
     <Logos :imgLogo="imgLogo" :isText="isText" />
     <div class="col-3 offset-1 text-end">
-      <p>BR&nbsp;&nbsp;&nbsp;&nbsp;EN</p>
       <ListaMenu />
     </div>
   </div>

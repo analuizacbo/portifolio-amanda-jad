@@ -12,6 +12,8 @@ p {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li a,
@@ -24,6 +26,18 @@ a {
 * {
   font-family: Roboto;
 }
+
+/* BODY */
+.bg-fundo {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 70%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 
 
 /* CABECARIO */
@@ -42,6 +56,35 @@ a {
 .svg-rosa {
   width: 100%;
 }
+
+.caixa-btn-menu button {
+  border: none;
+  background: none;
+}
+
+.btn-close {
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  z-index: 2;
+}
+
+.caixa-menu-burguer {
+  width: 180px;
+  height: 153px;
+  background-color: #fff;
+  box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 12px 0px 0px 12px;
+  position: fixed;
+  top: 120px;
+  right: 0;
+  z-index: 2;
+}
+
+.menu li {
+  margin-top: 20px;
+}
+
 
 .caixa-profissao {
   margin: 0px 0 16px 0
@@ -76,6 +119,7 @@ a {
   margin-top: 36px;
 }
 
+
 .card-projetos {
   height: 329px;
   width: 329px;
@@ -84,7 +128,6 @@ a {
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* FOOTER */
 .caixa-footer {
   background-color: #710234;
 }
@@ -98,14 +141,83 @@ a {
 
 
 /* RESPONSIVIDADE */
-@media (max-width: 389.98px) {
+@media (max-width: 280px) {
 
   /* CABECARIO */
+  .linguagem {
+    margin-top: 18px;
+  }
+
+  .caixa-lista {
+    display: none;
+  }
+
   .caixa-svg-rosa {
-    width: 271.35px;
-    height: 252.98px;
+    width: 421.68px;
+    height: 435.55px;
     top: -2%;
-    left: -40%;
+    left: -75%;
+  }
+
+  .caixa-profissao {
+    margin-top: 12%;
+  }
+
+  .profissao {
+    font-size: 22px;
+  }
+
+  .txt-caveat-22 {
+    font-size: 22px;
+  }
+
+  .txt-skills {
+    font-size: 16px;
+  }
+
+  .card-projetos {
+    width: 154px;
+    height: 145px;
+    border-radius: 24px;
+    padding-bottom: 32px;
+  }
+
+  .txt-desc-projeto {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+
+  .desktop img {
+    height: 71px;
+  }
+
+  .mobile img {
+    height: 82px;
+  }
+
+}
+
+@media (min-width: 281px) and (max-width: 389.98px) {
+
+  /* CABECARIO */
+  .linguagem {
+    margin-top: 18px;
+  }
+
+  .caixa-lista {
+    display: none;
+  }
+
+  .menu li {
+    margin-left: 0;
+  }
+
+
+  .caixa-svg-rosa {
+    width: 421.68px;
+    height: 435.55px;
+    top: -2%;
+    left: -80%;
   }
 
   .caixa-profissao {
@@ -145,9 +257,57 @@ a {
   }
 }
 
-@media (min-width: 390px) and (max-width: 575.98px) {}
+@media (min-width: 390px) and (max-width: 539.98px) {
 
-@media (min-width: 576px) and (max-width: 767.98px) {}
+  .linguagem {
+    margin-top: 18px;
+  }
+
+  .caixa-svg-rosa {
+    width: 421.68px;
+    height: 435.55px;
+    top: -2%;
+    left: -75%;
+  }
+
+  .caixa-profissao {
+    margin-top: 12%;
+  }
+
+  .profissao {
+    font-size: 22px;
+  }
+
+  .txt-caveat-22 {
+    font-size: 22px;
+  }
+
+  .txt-skills {
+    font-size: 16px;
+  }
+
+  .card-projetos {
+    width: 154px;
+    height: 145px;
+    border-radius: 24px;
+    padding-bottom: 32px;
+  }
+
+  .txt-desc-projeto {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+
+  .desktop img {
+    height: 71px;
+  }
+
+  .mobile img {
+    height: 82px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767.98px) {}
 
 @media (min-width: 768px) and (max-width: 991.98px) {}
 
