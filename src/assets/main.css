@@ -38,8 +38,6 @@ a {
   z-index: 1;
 }
 
-
-
 /* CABECARIO */
 
 .borda-container {
@@ -57,9 +55,31 @@ a {
   width: 100%;
 }
 
+.caixa-linha {
+  position: relative;
+}
+
+.img-linha {
+  position: absolute;
+  top: 45%;
+  left: -50px;
+}
+
+.img-linha-menor {
+  display: none;
+}
+
 .caixa-btn-menu button {
   border: none;
   background: none;
+}
+
+.linguagem {
+  margin-top: 18px;
+}
+
+.btn-menu {
+  display: none;
 }
 
 .btn-close {
@@ -79,12 +99,12 @@ a {
   top: 120px;
   right: 0;
   z-index: 2;
+  display: none;
 }
 
 .menu li {
   margin-top: 20px;
 }
-
 
 .caixa-profissao {
   margin: 0px 0 16px 0
@@ -128,6 +148,9 @@ a {
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
+
+/* FOOTER */
+
 .caixa-footer {
   background-color: #710234;
 }
@@ -139,14 +162,16 @@ a {
   padding: 8px 0;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 /* RESPONSIVIDADE */
 @media (max-width: 280px) {
 
   /* CABECARIO */
-  .linguagem {
-    margin-top: 18px;
-  }
 
   .caixa-lista {
     display: none;
@@ -158,6 +183,21 @@ a {
     top: -2%;
     left: -75%;
   }
+
+  .img-linha-menor {
+    display: block;
+    top: 45%;
+    left: -20px;
+  }
+
+  .img-linha {
+    display: none;
+  }
+
+  .img-logo-amanda {
+    width: 150%;
+  }
+
 
   .caixa-profissao {
     margin-top: 12%;
@@ -195,6 +235,10 @@ a {
     height: 82px;
   }
 
+  .btn-menu {
+    display: block;
+  }
+
 }
 
 @media (min-width: 281px) and (max-width: 389.98px) {
@@ -204,6 +248,24 @@ a {
     margin-top: 18px;
   }
 
+  .img-linha-menor {
+    display: block;
+    top: 45%;
+    left: -20px;
+  }
+
+  .img-linha {
+    display: none;
+  }
+
+  .img-logo-amanda {
+    width: 150%;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
   .caixa-lista {
     display: none;
   }
@@ -211,7 +273,6 @@ a {
   .menu li {
     margin-left: 0;
   }
-
 
   .caixa-svg-rosa {
     width: 421.68px;
@@ -255,12 +316,40 @@ a {
   .mobile img {
     height: 82px;
   }
+
+  /* FOOTER */
+
+  .txt-footer {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 390px) and (max-width: 539.98px) {
 
   .linguagem {
     margin-top: 18px;
+  }
+
+  .img-logo-amanda {
+    width: 150%;
+  }
+
+  .img-linha-menor {
+    display: block;
+    top: 45%;
+    left: -20px;
+  }
+
+  .img-linha {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .caixa-lista {
+    display: none;
   }
 
   .caixa-svg-rosa {
@@ -305,13 +394,77 @@ a {
   .mobile img {
     height: 82px;
   }
+
+  /* FOOTER */
+
+  .txt-footer {
+    font-size: 12px;
+  }
 }
 
-@media (min-width: 540px) and (max-width: 767.98px) {}
+@media (min-width: 540px) and (max-width: 767.98px) {
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
+  .img-logo-amanda {
+    width: 150%;
+  }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+  .img-linha-menor {
+    display: block;
+    top: 45%;
+    left: -20px;
+  }
+
+  .img-linha {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .caixa-lista {
+    display: none;
+  }
+
+  /* FOOTER */
+
+  .txt-footer {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .img-logo-amanda {
+    width: 150%;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .caixa-lista {
+    display: none;
+  }
+
+  /* FOOTER */
+  .txt-footer {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .img-logo-amanda {
+    width: 150%;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .caixa-lista {
+    display: none;
+  }
+}
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {}
 

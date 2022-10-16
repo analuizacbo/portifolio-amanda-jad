@@ -3,7 +3,7 @@
     <div class="bg-fundo" />
     <router-view />
   </div>
-  <Footer />
+  <Footer class="footer" />
 </template>
 
 <script setup>
