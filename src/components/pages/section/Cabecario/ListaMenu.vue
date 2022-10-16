@@ -21,7 +21,7 @@
       </ul>
     </div>
 
-    <div class="caixa-btn-menu">
+    <div class="caixa-btn-menu d-flex justify-content-end">
       <button class="btn-menu">
         <img src="src/img/menu.svg" />
       </button>
