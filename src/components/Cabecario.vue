@@ -2,30 +2,29 @@
   <div class="caixa-svg-rosa">
     <img class="img-fluid svg-rosa" src="/src/img/vetor-fundo-perfil.svg" />
   </div>
+  <p class="text-end linguagem">BR&nbsp;&nbsp;&nbsp;&nbsp;EN</p>
   <div class="row">
-    <div class="col-4">
-      <img class="img-fluid" src="/src/img/foto-amanda-jad.svg" />
-    </div>
-    <div class="col-3 offset-1 d-flex align-items-center">
-      <img class="img-fluid" src="/src/img/amanda-jad-logo.svg" />
-    </div>
+    <Logos :imgLogo="imgLogo" :isText="isText" />
     <div class="col-3 offset-1 text-end">
-      <p>BR&nbsp;&nbsp;&nbsp;&nbsp;EN</p>
-      <div class="caixa-menu">
-        <ul class="d-flex justify-content-end menu">
-          <li>
-            <router-link :to="{ name: 'home' }">Home</router-link>
-          </li>
-          <li>
-            <router-link :to="{ name: 'sobre' }">Sobre</router-link>
-          </li>
-          <li>
-            <router-link :to="{ name: 'contato' }">Contato</router-link>
-          </li>
-        </ul>
-      </div>
+      <ListaMenu />
     </div>
   </div>
 </template>
+
+<script setup>
+import Logos from "./pages/section/Cabecario/Logos.vue";
+import ListaMenu from "./pages/section/Cabecario/ListaMenu.vue";
+
+defineProps({
+  imgLogo: {
+    type: String,
+  },
+  isText: {
+    type: Boolean,
+    default: true,
+  },
+});
+</script>
+
 
 
