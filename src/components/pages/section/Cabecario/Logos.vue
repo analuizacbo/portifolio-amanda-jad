@@ -4,6 +4,7 @@
     <div class="caixa-linha">
       <img class="img-linha" src="/src/img/linha-perfil-grande.svg" />
       <img class="img-linha-menor" src="/src/img/linha-perfil.svg" />
+      <img class="img-linha-medio" src="/src/img/linha-perfil-medio.svg" />
     </div>
   </div>
   <div v-if="isText" class="col-3 offset-1 d-flex align-items-center">

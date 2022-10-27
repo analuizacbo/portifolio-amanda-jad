@@ -69,6 +69,10 @@ a {
   display: none;
 }
 
+.img-linha-medio {
+  display: none;
+}
+
 .caixa-btn-menu button {
   border: none;
   background: none;
@@ -178,10 +182,14 @@ a {
   }
 
   .caixa-svg-rosa {
-    width: 421.68px;
+    width: 320.68px;
     height: 435.55px;
     top: -2%;
-    left: -75%;
+    left: -80%;
+  }
+
+  .img-linha {
+    display: none;
   }
 
   .img-linha-menor {
@@ -190,14 +198,14 @@ a {
     left: -20px;
   }
 
-  .img-linha {
-    display: none;
-  }
-
   .img-logo-amanda {
-    width: 150%;
+    width: 180%;
+    left: 15%;
   }
 
+  .caixa-menu {
+    margin-right: -20px;
+  }
 
   .caixa-profissao {
     margin-top: 12%;
@@ -216,8 +224,8 @@ a {
   }
 
   .card-projetos {
-    width: 154px;
-    height: 145px;
+    height: 130px;
+    width: 130px;
     border-radius: 24px;
     padding-bottom: 32px;
   }
@@ -237,6 +245,10 @@ a {
 
   .btn-menu {
     display: block;
+  }
+
+  .txt-footer {
+    font-size: 12px;
   }
 
 }
@@ -353,7 +365,7 @@ a {
   }
 
   .caixa-svg-rosa {
-    width: 421.68px;
+    width: 440.68px;
     height: 435.55px;
     top: -2%;
     left: -75%;
@@ -426,6 +438,16 @@ a {
     display: none;
   }
 
+  .caixa-svg-rosa {
+    top: -6%;
+    left: -85%;
+  }
+
+  .card-projetos {
+    height: 270px;
+    width: 250px;
+  }
+
   /* FOOTER */
 
   .txt-footer {
@@ -436,6 +458,17 @@ a {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .img-logo-amanda {
     width: 150%;
+    left: 35%;
+  }
+
+  .img-linha {
+    display: none;
+  }
+
+  .img-linha-medio {
+    display: block;
+    top: 50%;
+    left: -45%;
   }
 
   .btn-menu {
@@ -444,6 +477,11 @@ a {
 
   .caixa-lista {
     display: none;
+  }
+
+  .caixa-svg-rosa {
+    top: -2%;
+    left: -55%;
   }
 
   /* FOOTER */
