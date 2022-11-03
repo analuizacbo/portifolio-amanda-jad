@@ -17,19 +17,9 @@
       </div>
       <div class="col-9">
         <Experiencia
-          :cargo="filtroCargo(0)"
-          :data="filtroData(0)"
-          :tarefas="filtroTarefa(0)"
-        />
-        <Experiencia
-          :cargo="filtroCargo(1)"
-          :data="filtroData(1)"
-          :tarefas="filtroTarefa(1)"
-        />
-        <Experiencia
-          :cargo="filtroCargo(2)"
-          :data="filtroData(2)"
-          :tarefas="filtroTarefa(2)"
+          v-for="atribuicao in atribuicoes"
+          :key="atribuicao"
+          :atribuicao="atribuicao"
         />
       </div>
     </div>
@@ -41,7 +31,6 @@ import InfoPessoal from "./section/Sobre/InfoPessoal.vue";
 import Experiencia from "../pages/section/Sobre/Experiencia.vue";
 
 import { ref } from "vue";
-import { map } from "lodash";
 
 const atribuicoes = ref([
   {
@@ -70,26 +59,6 @@ const atribuicoes = ref([
       tarefa2: "Auxílio referente as documentações.",
       tarefa3: "Realizando serviços em geral de Detran e IIRGD.",
     },
-  },
+  }
 ]);
-
-const attr = atribuicoes.value;
-const objetoTarefas = ref({});
-const cargos = ref("");
-const datas = ref("");
-
-function filtroTarefa(index) {
-  objetoTarefas.value = map(attr, "tarefas");
-  return objetoTarefas.value[index];
-}
-
-function filtroCargo(index) {
-  cargos.value = map(attr, "cargo");
-  return cargos.value[index];
-}
-
-function filtroData(index) {
-  datas.value = map(attr, "data");
-  return datas.value[index];
-}
 </script> 
